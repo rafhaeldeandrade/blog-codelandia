@@ -1,0 +1,127 @@
+:root {
+  --blue: #3ea1db;
+  --blue-dark: #574ae8;
+  --white: #fff;
+
+  --title: #313131;
+  --text: #b6b6b6;
+
+  --linear: linear-gradient(90deg, #574ae8 0%, #3ea1db 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+header {
+  background-image: linear-gradient(90deg, #574ae8 0%, #3ea1db 100%);
+  display: flex;
+  flex-direction: column;
+  height: 25rem;
+}
+
+header .main-header {
+  width: 90rem;
+  margin: 0 auto;
+}
+
+header .main-header .header {
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4.1rem;
+}
+
+header .main-header h1 {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+.search-bar {
+  height: 65px;
+  position: absolute;
+  top: 14.4rem;
+  width: 900px;
+}
+
+.search-bar input {
+  background: rgba(255, 255, 255, 0.2);
+  border: 0;
+  border-radius: 0.5rem;
+  color: var(--white);
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.178rem;
+  padding: 2.1rem 6.4rem;
+  opacity: 0.5;
+  outline: 0;
+  width: 90rem;
+}
+
+.search-bar input::placeholder {
+  color: var(--white);
+}
+
+.search-bar img {
+  padding: 1.8rem 1.7rem;
+  position: absolute;
+}
+
+main {
+  margin: 0 auto;
+  padding: 10rem 0;
+  width: 90rem;
+}
+
+main .article {
+  padding: 2.5rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  background-color: var(--white);
+  box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
+  border-radius: 0.5rem;
+  margin-bottom: 5rem;
+}
+
+main .article .date {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .article .date span {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: var(--text);
+  margin-bottom: 2.2rem;
+}
+
+.article .article-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-title {
+  font-size: 2.6rem;
+  color: var(--title);
+  line-height: 3.25rem;
+  margin-bottom: 0.8rem;
+}
+
+.article-text {
+  color: var(--text);
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+}
