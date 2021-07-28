@@ -17,11 +17,11 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Inter", sans-serif;
 }
 
 body {
   background-color: #e5e5e5;
+  font-family: "Inter", sans-serif;
 }
 
 header {
@@ -41,6 +41,10 @@ header .main-header .header {
   display: flex;
   justify-content: space-between;
   padding-top: 4.1rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 3rem;
 }
 
 header .main-header h1 {
@@ -51,10 +55,10 @@ header .main-header h1 {
 }
 
 .search-bar {
-  height: 65px;
+  max-height: 6.5rem;
   position: absolute;
   top: 14.4rem;
-  width: 900px;
+  max-width: 100%;
 }
 
 .search-bar input {
@@ -124,4 +128,89 @@ main .article .date span {
   color: var(--text);
   font-size: 1.8rem;
   line-height: 3.2rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 481px) {
+  header {
+    height: 15rem;
+  }
+
+  header .main-header {
+    width: 25rem;
+  }
+
+  header .main-header .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .search-bar {
+    position: absolute;
+    top: 2rem;
+  }
+
+  .search-bar img {
+    position: relative;
+    top: 5rem;
+    width: 19%;
+  }
+
+  .search-bar input {
+    width: 25rem;
+    height: 4rem;
+    padding: 0 5rem;
+    font-size: 1.4rem;
+  }
+
+  main {
+    padding: 2.5rem 0;
+    width: 25rem;
+  }
+
+  main .article {
+    padding: 1.2rem;
+  }
+
+  main .article .date span {
+    font-size: 1.4rem;
+  }
+
+  .article-title {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  .article-text {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  header .main-header {
+    width: 50rem;
+  }
+
+  .search-bar input {
+    width: 50rem;
+  }
+
+  main {
+    padding: 3rem 0;
+    width: 50rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+  header .main-header {
+    width: 70rem;
+  }
+
+  .search-bar input {
+    width: 70rem;
+  }
+
+  main {
+    padding: 8rem 0;
+    width: 70rem;
+  }
 }
