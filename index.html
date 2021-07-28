@@ -73,5 +73,19 @@
       </div>
     </article>
   </main>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script>
+    const sr = ScrollReveal({
+        origin: 'top',
+        distance: '50px',
+        duration: 1500,
+        reset: false
+    });
+
+    ScrollReveal().reveal('.article', { delay: 200 });
+    ScrollReveal().reveal('.date', { delay: 300 });
+    ScrollReveal().reveal('.article-title', { delay: 300 });
+    ScrollReveal().reveal('.article-text"', { delay: 300 });
+</script>
 </body>
 </html>
